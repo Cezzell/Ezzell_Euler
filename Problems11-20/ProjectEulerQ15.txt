@@ -1,0 +1,1 @@
+This is a very simple problem. In order to reach the bottom right, we need the grids length in right moves, and the grids length in down moves. These  can be done in any order. So how many ways can you order them. It is simply n choose r. Where n is the length + height and r is just the length.
