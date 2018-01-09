@@ -25,6 +25,7 @@ Grid = [[int(j) for j in i] for i in Grid]
  
 
 def FindProduct():
+	"""Calculates Products in all directions."""
 	maximum = 0
 	for i in range(20):
 		for j in range(16):
@@ -53,4 +54,4 @@ def FindProduct():
 	return maximum
 
 
-print(FindProduct())
+print(FindProduct() +"\n")

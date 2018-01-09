@@ -20,6 +20,7 @@ number = "73167176531330624919225119674426574742355349194934\
 71636269561882670428252483600823257530420752963450"
 
 def MultString(s):
+	"""Finds the multiple of a string of integers"""
 	hold = 1
 	if "0" in s:
 		return 0
@@ -32,8 +33,9 @@ def MultString(s):
 
 
 def FindMaxProduct():
+	"""Compiles a list of multiples and returns the max."""
 	Possibles = [number[x: x+13] for x in range(0, len(number)-13)]
 	Products = [MultString(x) for x in Possibles]
 	return max(Products)
 
-print(FindMaxProduct())
+print(FindMaxProduct() + "\n")

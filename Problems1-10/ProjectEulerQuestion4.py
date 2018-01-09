@@ -1,5 +1,6 @@
 def FindPalindrome():
-	"""Finds the largest Palindrome made from two 3 digit numbers"""
+	"""Finds the largest Palindrome made from the product of 
+	   two 3 digit numbers"""
 	Palindromes = []
 	for x in range(100,1000):
 		for y in range(100,1000):
@@ -9,4 +10,4 @@ def FindPalindrome():
 				Palindromes.append(hold)
 	return max(Palindromes)
 
-print(FindPalindrome())
+print(FindPalindrome() + "\n")
